@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock - Paper - Scissors</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        //Declare variables to compare (player and computer choices)//
-        //Create a function to get computer choice//
-        //Create a function to get players choice by prompt()//
-        //Create a PLayRound function to compare choices and return result according to game rules//
-        //Create a PlayGame function that repeats 5 times PlayRound function//
-        //Call PLayGame function by print//
+      //Declare variables to compare (player and computer choices)//
+      let playerChoice = playerGame;
+      let computerChoice = randomChoice;
+      let options = ["rock", "paper", "scissors"];
+
+      //Create a function to get computer choice//
+      function computerChoice(options) {
+        let random = Math.floor(Math.random() * options.length);
+        let randomChoice = options[random];
+        return randomChoice;
+      }
+
+      //Create a function to get players choice by prompt()//
+      
+      //Create a PLayRound function to compare choices and return result according to game rules//
+      //Create a PlayGame function that repeats 5 times PlayRound function//
+      //Call PLayGame function by print//
     </script>
-</body>
+  </body>
 </html>
