@@ -8,9 +8,9 @@
   <body>
     <script>
       //Get computers Selection by function//
-
+      const options = ["rock", "paper", "scissors"];
+      
       function computerChoice() {
-        const options = ["rock", "paper", "scissors"];
         let randomOption = Math.floor(Math.random() * options.length);
         let computerSelection = options[randomOption];
         return computerSelection;
@@ -24,11 +24,16 @@
 
       function playRound() {
         let playerGame = prompt("Choose your weapon: rock, paper or scissors");
-        if (playerGame === "") {
-          do {
+         if (playerGame === "") {
+           do {
             playerGame = prompt("You must choose a weapon");
-          } while (playerGame === "");
-        }
+           } while (playerGame === "");
+          } else if (!options.includes(playerGame)){
+            do {
+              playerGame = prompt("Please select a valid option");
+            } while (!options.includes(playerGame)); 
+          }
+
         let computerGame = computerChoice();
         if (
           (playerGame === "rock" && computerGame === "scissors") ||
