@@ -1,0 +1,51 @@
+body{
+    background-image:url(img/background.png);
+}
+
+#title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-title{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 8em;
+    text-shadow: 4px 4px #154c79;
+    padding: 30px 30px 0px 30px;
+    margin-bottom: 0px;
+}
+#text{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4em;
+    text-shadow: 2px 2px #154c79;
+}
+#weapons{
+    display: flex;
+    justify-content: center;
+}
+.weapon{
+    width: 300px;
+    padding: 20px ;
+    background-color: #2576b9;
+    color: white;
+    font-size: 6em;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px #154c79;
+    border: none;
+
+}
+.weapon:hover{
+    background-color: #25b995;
+    cursor: pointer;
+}
+.weapon:active{
+    background-color: #157f64;
+}
