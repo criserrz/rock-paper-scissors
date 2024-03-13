@@ -1,51 +1,126 @@
-body{
-    background-image:url(img/background.png);
+body {
+  background-image: url(img/background.png);
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-#title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#main-title{
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 8em;
-    text-shadow: 4px 4px #154c79;
-    padding: 30px 30px 0px 30px;
-    margin-bottom: 0px;
+#main-title {
+  color: white;
+  font-size: 5em;
+  text-shadow: 4px 4px #154c79;
+  padding: 30px 30px 0px 30px;
+  margin-bottom: 0px;
 }
-#text{
+#text {
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2em;
+  text-shadow: 2px 2px #154c79;
+}
+#rounds {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  background-color: #154c79;
+}
+#weapons {
+  display: flex;
+  justify-content: center;
+}
+.buttons{
     display: flex;
-    justify-content: center;
+    list-style: none;
 }
-h2{
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 4em;
-    text-shadow: 2px 2px #154c79;
+.weapon {
+  width: 200px;
+  padding: 20px;
+  background-color: #2576b9;
+  color: white;
+  font-size: 2.5em;
+  margin: 60px;
+  border-radius: 20px;
+  box-shadow: 5px 10px 18px #154c79;
+  border: none;
 }
-#weapons{
-    display: flex;
-    justify-content: center;
+.weapon:hover {
+  background-color: #25b995;
+  cursor: pointer;
+  box-shadow: 5px 10px 18px #157f64;
 }
-.weapon{
-    width: 300px;
-    padding: 20px ;
-    background-color: #2576b9;
-    color: white;
-    font-size: 6em;
-    margin: 30px;
-    border-radius: 20px;
-    box-shadow: 5px 10px 18px #154c79;
-    border: none;
+.weapon:active {
+  background-color: #157f64;
+  box-shadow: 5px 10px 18px #157f64;
+}
 
+.game-field {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 350px;
 }
-.weapon:hover{
-    background-color: #25b995;
-    cursor: pointer;
+#player-field,
+#computer-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
-.weapon:active{
-    background-color: #157f64;
+#player-box,
+#computer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: solid 4px #154c79;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  color: #25b995;
+}
+.score {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #154c79;
+}
+i {
+  font-size: 3em;
+}
+.reset {
+  display: flex;
+  justify-content: center;
+}
+#restart-button {
+  background-color: #2576b9;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 30px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 18px #154c79;
+  border: none;
+}
+#restart-button:hover {
+  background-color: #25b995;
+  cursor: pointer;
+  box-shadow: 5px 10px 18px #157f64;
+}
+#restart-button:active {
+  background-color: #157f64;
+  cursor: pointer;
+  box-shadow: 5px 10px 18px #157f64;
 }

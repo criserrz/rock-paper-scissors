@@ -15,11 +15,34 @@
   </head>
   <body>
     <div id="title"><h1 id="main-title">Let's Rock-Paper-Scissors!</h1></div>
-    <div id="text"><h2>Choose your weapon.</h2></div>
+    <div id="text"><h2 id="game-text">Choose your weapon.</h2></div>
+    <div id="rounds"> <p>Remaining rounds: <span id="remaining"> 5 </span></p></div>
     <div id="weapons">
-      <button class="weapon"><i class="fa-solid fa-hand-fist"></i></button>
-      <button class="weapon"><i class="fa-solid fa-hand"></i></i></button>
-      <button class="weapon"><i class="fa-solid fa-hand-peace"></i></button>
+      <ul class="buttons">
+        <li><button class="weapon" id="rock" ><i class="fa-solid fa-hand-fist" id="fist"></i></button></li>
+        <li><button class="weapon" id="paper" ><i class="fa-solid fa-hand" id="palm"></i></i></button></li>
+        <li><button class="weapon" id="scissors"><i class="fa-solid fa-hand-peace" id="peace"></i></button></li>
+      </ul>
     </div>
+    <div class="game-field">
+      <div id="player-field">
+        <h2>Your choice</h2>
+        <div id="player-box"></div>
+        
+      </div>
+      <div class="score">
+        <p>Player Score <br><span id="player-score"></span></p>
+        <p>Computer Score <br> <span id="computer-score"></span></p>
+      </div>
+      <div id="computer-field">
+        <h2>Computer's choice</h2>
+        <div id="computer-box"></div>
+        
+      </div>
+    </div>
+    <div class="reset">
+      <button id="restart-button" onclick="document.location.reload()"> Reset Game</button>
+    </div>
+    <script src="script.js"></script>
     </body>
 </html>
