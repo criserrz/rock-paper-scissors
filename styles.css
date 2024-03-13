@@ -1,5 +1,5 @@
 body {
-  
+  margin: 0;
   background-image: url(img/background.png);
   color: white;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -133,6 +133,7 @@ i {
 }
 h2{
   font-size: 1em;
+  text-align: center;
 }
 .weapon {
   width: 100px;
@@ -158,5 +159,8 @@ i{
 }
 .score{
   font-size: 1em;
+}
+#restart-button{
+  margin-top: 30px;
 }
 }
