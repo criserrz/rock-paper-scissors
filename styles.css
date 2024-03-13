@@ -1,4 +1,5 @@
 body {
+  
   background-image: url(img/background.png);
   color: white;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -123,4 +124,39 @@ i {
   background-color: #157f64;
   cursor: pointer;
   box-shadow: 5px 10px 18px #157f64;
+}
+
+@media only screen and (max-width: 600px) {
+#main-title{
+  font-size: 3em;
+  text-align: center;
+}
+h2{
+  font-size: 1em;
+}
+.weapon {
+  width: 100px;
+  padding: 10px;
+  font-size: 1.5em;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 18px #154c79;
+  border: none;
+}
+.game-field{
+  padding: 20px;
+}
+#player-box,
+#computer-box {
+  
+  width: 50px;
+  height: 50px;
+  
+}
+i{
+  font-size: 1em;
+}
+.score{
+  font-size: 1em;
+}
 }
